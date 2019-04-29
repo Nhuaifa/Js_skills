@@ -77,3 +77,17 @@
   friend.sayName()
   ```
  
+ 6）寄生构造函数
+ ```
+ function SpecialArray(){
+    var values = new Array();
+    values.push.apply(values,arguments);
+    values.toPipedString = function(){
+       return this.join('|')
+    };
+    return values;
+ }
+ 
+ var colos = new SpecialArray('red','blue','green');
+ alert(colors.toPipedString());//'red|blue|green'
+ ```

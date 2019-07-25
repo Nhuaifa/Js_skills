@@ -10,7 +10,7 @@
   - Macrotasks: setTimeout, setInterval, setImmediate, I/O, UI rendering
   - Microtasks: process.nextTick, Promises, Object.observe(废弃), MutationObserver
 ---
-js执行宏任务与微任务的顺序：
+###### js执行宏任务与微任务的顺序：
 - microtask会优先macrotask执行
 - microtasks会被循环提取到执行引擎主线程的执行栈，直到microtasks任务队列清空，才会执行macrotask
 ---

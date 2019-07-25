@@ -3,6 +3,7 @@
 >>>栈（stack） : 函数调用会形成了一个堆栈帧
 堆（heap） : 对象被分配在一个堆中，一个用以表示一个内存中大的未被组织的区域。
 队列（queue） ： 一个 JavaScript 运行时包含了一个待处理的消息队列。每一个消息都与一个函数相关联。当栈为空时，则从队列中取出一个消息进行处理。这个处理过程包含了调用与这个消息相关联的函数（以及因而创建了一个初始堆栈帧）。当栈再次为空的时候，也就意味着该消息处理结束。
+![Alt text](https://link.juejin.im/?target=https%3A%2F%2Fmdn.mozillademos.org%2Ffiles%2F4617%2Fdefault.svg)
 ---
 #### Macrotasks 和 Microtasks-- 宏任务与微任务
 

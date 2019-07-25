@@ -1,6 +1,6 @@
-1、创建jS对象的几种方式：
+#### 创建jS对象的几种方式：
  
- 1）工厂模式：
+> 1、工厂模式：
   ```
   function createPersion(name,age){
     var o = new Object();
@@ -15,7 +15,8 @@
   ```
   劣势：无法解决对象识别问题；
   
-  2）构造函数模式：
+>2、构造函数模式：
+
   ```
   function Presion(name,age){
     this.name = name；
@@ -29,7 +30,7 @@
   优势：解决了对象识别问题
   劣势：每个实例的方法均不同，浪费方法产出空间
   
-  3）原型模式：
+>3、原型模式：
   ```
   function Presion(name,age){
   }
@@ -44,8 +45,7 @@
   ```
   优势：解决了对象识别问题;每个实例的方法均不同，浪费方法产出空间的问题
   
-  
-  4）原型模式：
+>4、原型模式：
   ```
   function Preson(name,age){
     this.name = name
@@ -62,7 +62,7 @@
   ```
   优势：最大限度的节省内存，集两种模式之长；
   
-  5）动态原型模式：
+>5、动态原型模式：
   ```
   function Preson(name,age){
     this.name = name
@@ -76,8 +76,7 @@
   var friend = new Person('Nicholas','29')
   friend.sayName()
   ```
- 
- 6）寄生构造函数
+>6、寄生构造函数
  ```
  function SpecialArray(){
     var values = new Array();
